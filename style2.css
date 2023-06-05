@@ -4,45 +4,52 @@
     box-sizing: border-box;
 }
 
-html{
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
     font-family: 'Times New Roman', Times, serif;
 }
+
 /* header style */
-.header {
+header {
     background-color: #9933cc;
     color: #ffffff;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 15px;
 }
 
 /* menu style */
 .menu {
     width: 25%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     float: left;
     padding: 15px;
 }
 
 .menu ul {
     list-style-type: none;
-  }
+}
 
-  .menu li {
+.menu li {
     padding: 8px;
     margin-bottom: 7px;
-    background-color :#33b5e5;
+    background-color: #33b5e5;
     color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
 
-  .menu li:hover {
+.menu li:hover {
     background-color: #0099cc;
-  }
+}
 
 /* main style */
 .main {
     width: 75%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     float: left;
     padding: 15px;
 }
@@ -100,16 +107,23 @@ html{
 /* This is a selector that deals with all classes start with col- */
 [class*="col-"] {
     padding: 15px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     float: left;
 }
 
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-
-  
+footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
