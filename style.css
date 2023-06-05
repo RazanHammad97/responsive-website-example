@@ -1,0 +1,38 @@
+/* .details-info-class{
+    width: 100%;
+} */
+* {
+    box-sizing: border-box;
+  }
+  
+.fname{
+    width: 50%;
+}
+.lname{
+    width: 50%;
+}
+.footer-text{
+    width: 100%;
+}
+.header-text-class{
+    width: 100%;
+    background-color: purple;
+}
+.header-text{
+    text-align: center;
+}
+@media  screen and (max-width:600) {
+    /* .details-info-class{
+        width: 100%;
+    } */
+    .header-text-class{
+        /* width: 100%; */
+    }
+    .fname{
+        width: 100%;
+    }
+    .lname{
+        width: 100%;
+    }
+
+}
